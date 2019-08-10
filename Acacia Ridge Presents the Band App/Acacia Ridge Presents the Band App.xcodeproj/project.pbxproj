@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A258FC9722FF4195007B682C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FC9622FF4195007B682C /* AppDelegate.swift */; };
+		A258FC9922FF4195007B682C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FC9822FF4195007B682C /* ViewController.swift */; };
+		A258FC9F22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A258FC9D22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld */; };
+		A258FCA122FF4196007B682C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A258FCA022FF4196007B682C /* Assets.xcassets */; };
+		A258FCA422FF4196007B682C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A258FCA222FF4196007B682C /* LaunchScreen.storyboard */; };
+		A258FCAF22FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCAE22FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppTests.swift */; };
+		A258FCBA22FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCB922FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppUITests.swift */; };
+		A258FCC922FF41C8007B682C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A258FCC722FF41C8007B682C /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A258FCAB22FF4196007B682C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A258FC8B22FF4195007B682C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A258FC9222FF4195007B682C;
+			remoteInfo = "Acacia Ridge Presents the Band App";
+		};
+		A258FCB622FF4196007B682C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A258FC8B22FF4195007B682C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A258FC9222FF4195007B682C;
+			remoteInfo = "Acacia Ridge Presents the Band App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A258FC9322FF4195007B682C /* Acacia Ridge Presents the Band App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Acacia Ridge Presents the Band App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A258FC9622FF4195007B682C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A258FC9822FF4195007B682C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A258FC9E22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Acacia_Ridge_Presents_the_Band_App.xcdatamodel; sourceTree = "<group>"; };
+		A258FCA022FF4196007B682C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A258FCA322FF4196007B682C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A258FCA522FF4196007B682C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A258FCAA22FF4196007B682C /* Acacia Ridge Presents the Band AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Acacia Ridge Presents the Band AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A258FCAE22FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acacia_Ridge_Presents_the_Band_AppTests.swift; sourceTree = "<group>"; };
+		A258FCB022FF4196007B682C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A258FCB522FF4196007B682C /* Acacia Ridge Presents the Band AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Acacia Ridge Presents the Band AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A258FCB922FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acacia_Ridge_Presents_the_Band_AppUITests.swift; sourceTree = "<group>"; };
+		A258FCBB22FF4196007B682C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A258FCC822FF41C8007B682C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Acacia Ridge Presents the Band Merch App/Acacia Ridge Presents the Band Merch App/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A258FC9022FF4195007B682C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A258FCA722FF4196007B682C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A258FCB222FF4196007B682C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A258FC8A22FF4195007B682C = {
+			isa = PBXGroup;
+			children = (
+				A258FC9522FF4195007B682C /* Acacia Ridge Presents the Band App */,
+				A258FCAD22FF4196007B682C /* Acacia Ridge Presents the Band AppTests */,
+				A258FCB822FF4196007B682C /* Acacia Ridge Presents the Band AppUITests */,
+				A258FC9422FF4195007B682C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A258FC9422FF4195007B682C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A258FC9322FF4195007B682C /* Acacia Ridge Presents the Band App.app */,
+				A258FCAA22FF4196007B682C /* Acacia Ridge Presents the Band AppTests.xctest */,
+				A258FCB522FF4196007B682C /* Acacia Ridge Presents the Band AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A258FC9522FF4195007B682C /* Acacia Ridge Presents the Band App */ = {
+			isa = PBXGroup;
+			children = (
+				A258FC9622FF4195007B682C /* AppDelegate.swift */,
+				A258FC9822FF4195007B682C /* ViewController.swift */,
+				A258FCA022FF4196007B682C /* Assets.xcassets */,
+				A258FCC722FF41C8007B682C /* Main.storyboard */,
+				A258FCA222FF4196007B682C /* LaunchScreen.storyboard */,
+				A258FCA522FF4196007B682C /* Info.plist */,
+				A258FC9D22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld */,
+			);
+			path = "Acacia Ridge Presents the Band App";
+			sourceTree = "<group>";
+		};
+		A258FCAD22FF4196007B682C /* Acacia Ridge Presents the Band AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A258FCAE22FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppTests.swift */,
+				A258FCB022FF4196007B682C /* Info.plist */,
+			);
+			path = "Acacia Ridge Presents the Band AppTests";
+			sourceTree = "<group>";
+		};
+		A258FCB822FF4196007B682C /* Acacia Ridge Presents the Band AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A258FCB922FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppUITests.swift */,
+				A258FCBB22FF4196007B682C /* Info.plist */,
+			);
+			path = "Acacia Ridge Presents the Band AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A258FC9222FF4195007B682C /* Acacia Ridge Presents the Band App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A258FCBE22FF4196007B682C /* Build configuration list for PBXNativeTarget "Acacia Ridge Presents the Band App" */;
+			buildPhases = (
+				A258FC8F22FF4195007B682C /* Sources */,
+				A258FC9022FF4195007B682C /* Frameworks */,
+				A258FC9122FF4195007B682C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Acacia Ridge Presents the Band App";
+			productName = "Acacia Ridge Presents the Band App";
+			productReference = A258FC9322FF4195007B682C /* Acacia Ridge Presents the Band App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A258FCA922FF4196007B682C /* Acacia Ridge Presents the Band AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A258FCC122FF4196007B682C /* Build configuration list for PBXNativeTarget "Acacia Ridge Presents the Band AppTests" */;
+			buildPhases = (
+				A258FCA622FF4196007B682C /* Sources */,
+				A258FCA722FF4196007B682C /* Frameworks */,
+				A258FCA822FF4196007B682C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A258FCAC22FF4196007B682C /* PBXTargetDependency */,
+			);
+			name = "Acacia Ridge Presents the Band AppTests";
+			productName = "Acacia Ridge Presents the Band AppTests";
+			productReference = A258FCAA22FF4196007B682C /* Acacia Ridge Presents the Band AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A258FCB422FF4196007B682C /* Acacia Ridge Presents the Band AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A258FCC422FF4196007B682C /* Build configuration list for PBXNativeTarget "Acacia Ridge Presents the Band AppUITests" */;
+			buildPhases = (
+				A258FCB122FF4196007B682C /* Sources */,
+				A258FCB222FF4196007B682C /* Frameworks */,
+				A258FCB322FF4196007B682C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A258FCB722FF4196007B682C /* PBXTargetDependency */,
+			);
+			name = "Acacia Ridge Presents the Band AppUITests";
+			productName = "Acacia Ridge Presents the Band AppUITests";
+			productReference = A258FCB522FF4196007B682C /* Acacia Ridge Presents the Band AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A258FC8B22FF4195007B682C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Alex Shillingford";
+				TargetAttributes = {
+					A258FC9222FF4195007B682C = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					A258FCA922FF4196007B682C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = A258FC9222FF4195007B682C;
+					};
+					A258FCB422FF4196007B682C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = A258FC9222FF4195007B682C;
+					};
+				};
+			};
+			buildConfigurationList = A258FC8E22FF4195007B682C /* Build configuration list for PBXProject "Acacia Ridge Presents the Band App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A258FC8A22FF4195007B682C;
+			productRefGroup = A258FC9422FF4195007B682C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A258FC9222FF4195007B682C /* Acacia Ridge Presents the Band App */,
+				A258FCA922FF4196007B682C /* Acacia Ridge Presents the Band AppTests */,
+				A258FCB422FF4196007B682C /* Acacia Ridge Presents the Band AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A258FC9122FF4195007B682C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A258FCC922FF41C8007B682C /* Main.storyboard in Resources */,
+				A258FCA422FF4196007B682C /* LaunchScreen.storyboard in Resources */,
+				A258FCA122FF4196007B682C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A258FCA822FF4196007B682C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A258FCB322FF4196007B682C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A258FC8F22FF4195007B682C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A258FC9922FF4195007B682C /* ViewController.swift in Sources */,
+				A258FC9722FF4195007B682C /* AppDelegate.swift in Sources */,
+				A258FC9F22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A258FCA622FF4196007B682C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A258FCAF22FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A258FCB122FF4196007B682C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A258FCBA22FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A258FCAC22FF4196007B682C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A258FC9222FF4195007B682C /* Acacia Ridge Presents the Band App */;
+			targetProxy = A258FCAB22FF4196007B682C /* PBXContainerItemProxy */;
+		};
+		A258FCB722FF4196007B682C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A258FC9222FF4195007B682C /* Acacia Ridge Presents the Band App */;
+			targetProxy = A258FCB622FF4196007B682C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A258FCA222FF4196007B682C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A258FCA322FF4196007B682C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A258FCC722FF41C8007B682C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A258FCC822FF41C8007B682C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A258FCBC22FF4196007B682C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A258FCBD22FF4196007B682C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A258FCBF22FF4196007B682C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TX86F6EBCJ;
+				INFOPLIST_FILE = "Acacia Ridge Presents the Band App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shillwil.Acacia-Ridge-Presents-the-Band-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A258FCC022FF4196007B682C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TX86F6EBCJ;
+				INFOPLIST_FILE = "Acacia Ridge Presents the Band App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shillwil.Acacia-Ridge-Presents-the-Band-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A258FCC222FF4196007B682C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TX86F6EBCJ;
+				INFOPLIST_FILE = "Acacia Ridge Presents the Band AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shillwil.Acacia-Ridge-Presents-the-Band-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Acacia Ridge Presents the Band App.app/Acacia Ridge Presents the Band App";
+			};
+			name = Debug;
+		};
+		A258FCC322FF4196007B682C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TX86F6EBCJ;
+				INFOPLIST_FILE = "Acacia Ridge Presents the Band AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shillwil.Acacia-Ridge-Presents-the-Band-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Acacia Ridge Presents the Band App.app/Acacia Ridge Presents the Band App";
+			};
+			name = Release;
+		};
+		A258FCC522FF4196007B682C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TX86F6EBCJ;
+				INFOPLIST_FILE = "Acacia Ridge Presents the Band AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shillwil.Acacia-Ridge-Presents-the-Band-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Acacia Ridge Presents the Band App";
+			};
+			name = Debug;
+		};
+		A258FCC622FF4196007B682C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TX86F6EBCJ;
+				INFOPLIST_FILE = "Acacia Ridge Presents the Band AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shillwil.Acacia-Ridge-Presents-the-Band-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Acacia Ridge Presents the Band App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A258FC8E22FF4195007B682C /* Build configuration list for PBXProject "Acacia Ridge Presents the Band App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A258FCBC22FF4196007B682C /* Debug */,
+				A258FCBD22FF4196007B682C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A258FCBE22FF4196007B682C /* Build configuration list for PBXNativeTarget "Acacia Ridge Presents the Band App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A258FCBF22FF4196007B682C /* Debug */,
+				A258FCC022FF4196007B682C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A258FCC122FF4196007B682C /* Build configuration list for PBXNativeTarget "Acacia Ridge Presents the Band AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A258FCC222FF4196007B682C /* Debug */,
+				A258FCC322FF4196007B682C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A258FCC422FF4196007B682C /* Build configuration list for PBXNativeTarget "Acacia Ridge Presents the Band AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A258FCC522FF4196007B682C /* Debug */,
+				A258FCC622FF4196007B682C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A258FC9D22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A258FC9E22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodel */,
+			);
+			currentVersion = A258FC9E22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodel */;
+			path = Acacia_Ridge_Presents_the_Band_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A258FC8B22FF4195007B682C /* Project object */;
+}
