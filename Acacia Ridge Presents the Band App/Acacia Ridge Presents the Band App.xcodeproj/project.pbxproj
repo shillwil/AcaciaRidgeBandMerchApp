@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		A258FC9722FF4195007B682C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FC9622FF4195007B682C /* AppDelegate.swift */; };
-		A258FC9922FF4195007B682C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FC9822FF4195007B682C /* ViewController.swift */; };
 		A258FC9F22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A258FC9D22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld */; };
 		A258FCA122FF4196007B682C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A258FCA022FF4196007B682C /* Assets.xcassets */; };
 		A258FCA422FF4196007B682C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A258FCA222FF4196007B682C /* LaunchScreen.storyboard */; };
 		A258FCAF22FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCAE22FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppTests.swift */; };
 		A258FCBA22FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCB922FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppUITests.swift */; };
 		A258FCC922FF41C8007B682C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A258FCC722FF41C8007B682C /* Main.storyboard */; };
+		A258FCCB22FF4292007B682C /* MerchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCCA22FF4292007B682C /* MerchItem.swift */; };
+		A258FCCD22FF449E007B682C /* MerchInventory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A258FCCC22FF449E007B682C /* MerchInventory.storyboard */; };
+		A258FCD022FF4AF1007B682C /* InventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCCF22FF4AF1007B682C /* InventoryTableViewController.swift */; };
+		A258FCD222FF4B20007B682C /* CreateMerchItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCD122FF4B20007B682C /* CreateMerchItemViewController.swift */; };
+		A258FCD422FF4B5C007B682C /* InventoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCD322FF4B5C007B682C /* InventoryDetailViewController.swift */; };
+		A258FCD722FF4C6E007B682C /* InventoryItemCustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCD622FF4C6E007B682C /* InventoryItemCustomPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,6 @@
 /* Begin PBXFileReference section */
 		A258FC9322FF4195007B682C /* Acacia Ridge Presents the Band App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Acacia Ridge Presents the Band App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A258FC9622FF4195007B682C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A258FC9822FF4195007B682C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A258FC9E22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Acacia_Ridge_Presents_the_Band_App.xcdatamodel; sourceTree = "<group>"; };
 		A258FCA022FF4196007B682C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A258FCA322FF4196007B682C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		A258FCB922FF4196007B682C /* Acacia_Ridge_Presents_the_Band_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acacia_Ridge_Presents_the_Band_AppUITests.swift; sourceTree = "<group>"; };
 		A258FCBB22FF4196007B682C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A258FCC822FF41C8007B682C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Acacia Ridge Presents the Band Merch App/Acacia Ridge Presents the Band Merch App/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		A258FCCA22FF4292007B682C /* MerchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchItem.swift; sourceTree = "<group>"; };
+		A258FCCC22FF449E007B682C /* MerchInventory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MerchInventory.storyboard; sourceTree = "<group>"; };
+		A258FCCF22FF4AF1007B682C /* InventoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTableViewController.swift; sourceTree = "<group>"; };
+		A258FCD122FF4B20007B682C /* CreateMerchItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMerchItemViewController.swift; sourceTree = "<group>"; };
+		A258FCD322FF4B5C007B682C /* InventoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDetailViewController.swift; sourceTree = "<group>"; };
+		A258FCD622FF4C6E007B682C /* InventoryItemCustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItemCustomPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				A258FC9622FF4195007B682C /* AppDelegate.swift */,
-				A258FC9822FF4195007B682C /* ViewController.swift */,
+				A258FCD922FF4CA1007B682C /* Models */,
+				A258FCD822FF4C97007B682C /* Views */,
+				A258FCD522FF4C3B007B682C /* VIew Controllers */,
+				A258FCCE22FF4AB6007B682C /* Storyboards */,
 				A258FCA022FF4196007B682C /* Assets.xcassets */,
-				A258FCC722FF41C8007B682C /* Main.storyboard */,
-				A258FCA222FF4196007B682C /* LaunchScreen.storyboard */,
 				A258FCA522FF4196007B682C /* Info.plist */,
 				A258FC9D22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld */,
 			);
@@ -126,6 +137,42 @@
 				A258FCBB22FF4196007B682C /* Info.plist */,
 			);
 			path = "Acacia Ridge Presents the Band AppUITests";
+			sourceTree = "<group>";
+		};
+		A258FCCE22FF4AB6007B682C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A258FCC722FF41C8007B682C /* Main.storyboard */,
+				A258FCCC22FF449E007B682C /* MerchInventory.storyboard */,
+				A258FCA222FF4196007B682C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A258FCD522FF4C3B007B682C /* VIew Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A258FCD322FF4B5C007B682C /* InventoryDetailViewController.swift */,
+				A258FCD122FF4B20007B682C /* CreateMerchItemViewController.swift */,
+				A258FCCF22FF4AF1007B682C /* InventoryTableViewController.swift */,
+			);
+			path = "VIew Controllers";
+			sourceTree = "<group>";
+		};
+		A258FCD822FF4C97007B682C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A258FCD622FF4C6E007B682C /* InventoryItemCustomPickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A258FCD922FF4CA1007B682C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A258FCCA22FF4292007B682C /* MerchItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A258FCC922FF41C8007B682C /* Main.storyboard in Resources */,
+				A258FCCD22FF449E007B682C /* MerchInventory.storyboard in Resources */,
 				A258FCA422FF4196007B682C /* LaunchScreen.storyboard in Resources */,
 				A258FCA122FF4196007B682C /* Assets.xcassets in Resources */,
 			);
@@ -259,8 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A258FC9922FF4195007B682C /* ViewController.swift in Sources */,
+				A258FCCB22FF4292007B682C /* MerchItem.swift in Sources */,
 				A258FC9722FF4195007B682C /* AppDelegate.swift in Sources */,
+				A258FCD422FF4B5C007B682C /* InventoryDetailViewController.swift in Sources */,
+				A258FCD222FF4B20007B682C /* CreateMerchItemViewController.swift in Sources */,
+				A258FCD022FF4AF1007B682C /* InventoryTableViewController.swift in Sources */,
+				A258FCD722FF4C6E007B682C /* InventoryItemCustomPickerView.swift in Sources */,
 				A258FC9F22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

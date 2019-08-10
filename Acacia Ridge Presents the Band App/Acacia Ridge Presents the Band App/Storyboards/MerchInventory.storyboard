@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GXi-bw-wXU">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Inventory-->
+        <scene sceneID="Sdi-iT-iKc">
+            <objects>
+                <tableViewController id="XQC-ZU-DSZ" customClass="InventoryTableViewController" customModule="Acacia_Ridge_Presents_the_Band_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Om2-Nf-IfX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="UFA-dc-FE3">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InventoryCell" id="pQg-cp-IcG">
+                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pQg-cp-IcG" id="LqX-5S-Fhv">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="UPM-2q-ldo" kind="show" identifier="ViewMerchItem" id="7IU-M6-TdH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XQC-ZU-DSZ" id="26a-aK-thE"/>
+                            <outlet property="delegate" destination="XQC-ZU-DSZ" id="SCA-4i-k8z"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Inventory" image="clo-t-hanger-line-3" selectedImage="clo-t-hanger-solid-3" id="cgW-bN-0gT"/>
+                    <navigationItem key="navigationItem" title="Inventory" id="xwj-vF-yLj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tGZ-Je-jKZ">
+                            <connections>
+                                <segue destination="meE-pn-J3Z" kind="presentation" identifier="CreateMerchItem" id="P0q-ij-DwD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LO4-Hk-j1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2836.2318840579715" y="147.99107142857142"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="sOz-E3-PZz">
+            <objects>
+                <viewController id="UPM-2q-ldo" customClass="InventoryDetailViewController" customModule="Acacia_Ridge_Presents_the_Band_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WNf-1G-FY0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merchandise Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qca-Ba-wDm">
+                                <rect key="frame" x="50" y="190" width="314" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="a6z-Gq-oQJ">
+                                <rect key="frame" x="115" y="235" width="184" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzN-B5-fw4">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Items in stock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g8-Fc-sQi">
+                                        <rect key="frame" x="33" y="0.0" width="151" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qca-Ba-wDm" firstAttribute="top" secondItem="nwg-Jz-R6a" secondAttribute="top" constant="50" id="Dko-7K-9wj"/>
+                            <constraint firstItem="qca-Ba-wDm" firstAttribute="centerX" secondItem="WNf-1G-FY0" secondAttribute="centerX" id="Flx-d6-SMd"/>
+                            <constraint firstItem="qca-Ba-wDm" firstAttribute="leading" secondItem="nwg-Jz-R6a" secondAttribute="leading" constant="50" id="S9Z-XB-NwH"/>
+                            <constraint firstItem="nwg-Jz-R6a" firstAttribute="trailing" secondItem="a6z-Gq-oQJ" secondAttribute="trailing" constant="115" id="UzK-N1-8H4"/>
+                            <constraint firstItem="nwg-Jz-R6a" firstAttribute="trailing" secondItem="qca-Ba-wDm" secondAttribute="trailing" constant="50" id="dvl-pd-ytx"/>
+                            <constraint firstItem="a6z-Gq-oQJ" firstAttribute="leading" secondItem="nwg-Jz-R6a" secondAttribute="leading" constant="115" id="lB4-7Q-0pz"/>
+                            <constraint firstItem="a6z-Gq-oQJ" firstAttribute="top" secondItem="qca-Ba-wDm" secondAttribute="bottom" constant="16" id="rXp-iH-LHV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nwg-Jz-R6a"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Inventory" image="clo-t-hanger-line-3" selectedImage="clo-t-hanger-solid-3" id="ifV-ZM-hJU"/>
+                    <navigationItem key="navigationItem" title="Item" id="e5H-mF-hbt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EaG-n0-ft6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3804.347826086957" y="643.52678571428567"/>
+        </scene>
+        <!--Create Merch Item View Controller-->
+        <scene sceneID="5SQ-KA-xuq">
+            <objects>
+                <viewController id="meE-pn-J3Z" customClass="CreateMerchItemViewController" customModule="Acacia_Ridge_Presents_the_Band_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d9c-rr-Yxx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="CII-4d-oSm">
+                                <rect key="frame" x="20" y="94" width="374" height="319"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="A31-h4-asC">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="253"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merch Item:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTK-no-2ex">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Jz-tQ-Sd5" customClass="InventoryItemCustomPickerView" customModule="Acacia_Ridge_Presents_the_Band_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="37" width="374" height="216"/>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pWj-Tl-g1B">
+                                        <rect key="frame" x="0.0" y="289" width="374" height="30"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="X2o-wx-7PK">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Current Count:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9If-Qv-wxq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="162" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number Here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1x3-Bf-3N0">
+                                                        <rect key="frame" x="170" y="0.0" width="204" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ko4-4U-71h">
+                                <rect key="frame" x="20" y="453" width="374" height="41"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Save Item">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ko4-4U-71h" firstAttribute="top" secondItem="CII-4d-oSm" secondAttribute="bottom" constant="40" id="Jdk-al-lxg"/>
+                            <constraint firstItem="CII-4d-oSm" firstAttribute="leading" secondItem="hgb-yr-qK8" secondAttribute="leading" constant="20" id="L95-2s-d5b"/>
+                            <constraint firstItem="hgb-yr-qK8" firstAttribute="trailing" secondItem="CII-4d-oSm" secondAttribute="trailing" constant="20" id="NlC-CU-hnf"/>
+                            <constraint firstItem="Ko4-4U-71h" firstAttribute="leading" secondItem="hgb-yr-qK8" secondAttribute="leading" constant="20" id="XEB-sf-2H2"/>
+                            <constraint firstItem="hgb-yr-qK8" firstAttribute="trailing" secondItem="Ko4-4U-71h" secondAttribute="trailing" constant="20" id="hrl-Ul-KPB"/>
+                            <constraint firstItem="CII-4d-oSm" firstAttribute="top" secondItem="hgb-yr-qK8" secondAttribute="top" constant="50" id="yEk-up-xOs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hgb-yr-qK8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4kM-QL-dxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3804.347826086957" y="-305.35714285714283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OAl-06-cjk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GXi-bw-wXU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="SO1-bL-kID">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XQC-ZU-DSZ" kind="relationship" relationship="rootViewController" id="MJS-UC-cmL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IIB-6X-ken" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926.0869565217392" y="147.99107142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clo-t-hanger-line-3" width="32" height="32"/>
+        <image name="clo-t-hanger-solid-3" width="32" height="32"/>
+    </resources>
+</document>
