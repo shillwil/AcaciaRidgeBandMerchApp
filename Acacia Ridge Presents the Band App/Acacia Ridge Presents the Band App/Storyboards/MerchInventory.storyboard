@@ -164,6 +164,9 @@
                                 <state key="normal" title="Save Item">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveItemButtonTapped:" destination="meE-pn-J3Z" eventType="touchUpInside" id="323-Gg-7lh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -177,6 +180,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hgb-yr-qK8"/>
                     </view>
+                    <connections>
+                        <outlet property="merchCategoryPicker" destination="4Jz-tQ-Sd5" id="2fJ-8b-AjP"/>
+                        <outlet property="merchItemCountTextField" destination="1x3-Bf-3N0" id="VaG-7H-HLw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kM-QL-dxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

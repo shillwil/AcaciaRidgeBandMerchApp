@@ -9,6 +9,10 @@
 import UIKit
 
 class CreateMerchItemViewController: UIViewController {
+    
+    @IBOutlet weak var merchCategoryPicker: InventoryItemCustomPickerView!
+    @IBOutlet weak var merchItemCountTextField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +20,9 @@ class CreateMerchItemViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func saveItemButtonTapped(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 
