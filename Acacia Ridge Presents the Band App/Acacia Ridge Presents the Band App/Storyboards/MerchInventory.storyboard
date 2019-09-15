@@ -132,7 +132,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="CII-4d-oSm">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="CII-4d-oSm">
                                 <rect key="frame" x="20" y="94" width="374" height="405"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="X2o-wx-7PK">
@@ -166,7 +166,7 @@
                                             </pickerView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pWj-Tl-g1B">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pWj-Tl-g1B">
                                         <rect key="frame" x="0.0" y="355" width="374" height="50"/>
                                     </stackView>
                                 </subviews>
@@ -185,7 +185,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hgb-yr-qK8" firstAttribute="bottom" secondItem="CII-4d-oSm" secondAttribute="bottom" constant="363" id="0yj-P3-qLq"/>
                             <constraint firstItem="CII-4d-oSm" firstAttribute="leading" secondItem="hgb-yr-qK8" secondAttribute="leading" constant="20" id="L95-2s-d5b"/>
                             <constraint firstItem="hgb-yr-qK8" firstAttribute="trailing" secondItem="CII-4d-oSm" secondAttribute="trailing" constant="20" id="NlC-CU-hnf"/>
                             <constraint firstItem="Ko4-4U-71h" firstAttribute="leading" secondItem="hgb-yr-qK8" secondAttribute="leading" constant="20" id="XEB-sf-2H2"/>

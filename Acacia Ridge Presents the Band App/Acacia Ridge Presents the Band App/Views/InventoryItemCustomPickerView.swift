@@ -37,15 +37,15 @@ class InventoryItemCustomPickerView: UIPickerView {
 
 extension InventoryItemCustomPickerView: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        
+        return pickerData[component]
     }
     
     func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
-        return 50
+        return 5
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        <#code#>
+        
     }
 }
 
