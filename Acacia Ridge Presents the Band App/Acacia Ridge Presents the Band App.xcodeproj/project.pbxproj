@@ -20,6 +20,7 @@
 		A258FCD222FF4B20007B682C /* CreateMerchItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCD122FF4B20007B682C /* CreateMerchItemViewController.swift */; };
 		A258FCD422FF4B5C007B682C /* InventoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCD322FF4B5C007B682C /* InventoryDetailViewController.swift */; };
 		A258FCD722FF4C6E007B682C /* InventoryItemCustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCD622FF4C6E007B682C /* InventoryItemCustomPickerView.swift */; };
+		A25993C9231476B900FE8BD2 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25993C8231476B900FE8BD2 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A258FCD122FF4B20007B682C /* CreateMerchItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMerchItemViewController.swift; sourceTree = "<group>"; };
 		A258FCD322FF4B5C007B682C /* InventoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDetailViewController.swift; sourceTree = "<group>"; };
 		A258FCD622FF4C6E007B682C /* InventoryItemCustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItemCustomPickerView.swift; sourceTree = "<group>"; };
+		A25993C8231476B900FE8BD2 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 		A258FCD922FF4CA1007B682C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A25993C8231476B900FE8BD2 /* CoreDataStack.swift */,
 				A258FCCA22FF4292007B682C /* MerchItem.swift */,
 			);
 			path = Models;
@@ -314,6 +317,7 @@
 				A258FCD022FF4AF1007B682C /* InventoryTableViewController.swift in Sources */,
 				A258FCD722FF4C6E007B682C /* InventoryItemCustomPickerView.swift in Sources */,
 				A258FC9F22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld in Sources */,
+				A25993C9231476B900FE8BD2 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

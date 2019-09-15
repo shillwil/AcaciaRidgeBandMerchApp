@@ -11,4 +11,5 @@ import Foundation
 struct MerchItem: Codable {
     var name: String
     var count: Int
+    var identifier: UUID? = UUID()
 }

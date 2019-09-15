@@ -17,5 +17,46 @@ class InventoryItemCustomPickerView: UIPickerView {
         // Drawing code
     }
     */
+    
+    lazy var pickerData: [String] = {
+        let pickerCount: [String] = Array(0...60).map { String($0) }
+        let data: [String] = pickerCount
+        return data
+    }()
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        dataSource = self
+        delegate = self
+        
+        // Set default duration to 1 min 30 sec.
+        selectRow(1, inComponent: 0, animated: false)
+    }
 
+}
+
+extension InventoryItemCustomPickerView: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+        return 50
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        <#code#>
+    }
+}
+
+extension InventoryItemCustomPickerView: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    
 }
