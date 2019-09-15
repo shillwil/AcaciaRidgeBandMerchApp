@@ -10,10 +10,10 @@ import UIKit
 
 class CreateMerchItemViewController: UIViewController {
     
-    @IBOutlet weak var merchCategoryPicker: InventoryItemCustomPickerView!
-    @IBOutlet weak var merchItemCountTextField: UITextField!
+    @IBOutlet weak var merchItemTextField: UITextField!
+    @IBOutlet weak var merchCountTextField: UITextField!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
