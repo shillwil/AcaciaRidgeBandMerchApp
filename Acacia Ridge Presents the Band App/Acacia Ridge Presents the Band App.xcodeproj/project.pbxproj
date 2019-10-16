@@ -66,6 +66,7 @@
 		A258FCD122FF4B20007B682C /* CreateMerchItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMerchItemViewController.swift; sourceTree = "<group>"; };
 		A258FCD322FF4B5C007B682C /* InventoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDetailViewController.swift; sourceTree = "<group>"; };
 		A258FCD622FF4C6E007B682C /* InventoryItemCustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItemCustomPickerView.swift; sourceTree = "<group>"; };
+		A2632CDC2357CB1400ED7EFE /* Band 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Band 2.xcdatamodel"; sourceTree = "<group>"; };
 		A278B24B2356C25E004FBE5C /* ShowRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRepresentation.swift; sourceTree = "<group>"; };
 		A278B24D2356C27D004FBE5C /* ContactRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRepresentation.swift; sourceTree = "<group>"; };
 		A278B24F2356C2A6004FBE5C /* EmployeeRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRepresentation.swift; sourceTree = "<group>"; };
@@ -693,9 +694,10 @@
 		A29B467F2350041A0098D564 /* Band.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				A2632CDC2357CB1400ED7EFE /* Band 2.xcdatamodel */,
 				A29B46802350041A0098D564 /* Band.xcdatamodel */,
 			);
-			currentVersion = A29B46802350041A0098D564 /* Band.xcdatamodel */;
+			currentVersion = A2632CDC2357CB1400ED7EFE /* Band 2.xcdatamodel */;
 			path = Band.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="19A583" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Band" representedClassName="Band" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String" defaultValueString="UntitledBand"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Contact" representedClassName="Contact" syncable="YES" codeGenerationType="class">
+        <attribute name="bio" optional="YES" attributeType="String"/>
+        <attribute name="contactCategory" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="employer" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="number" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Employee" representedClassName="Employee" syncable="YES" codeGenerationType="class">
+        <attribute name="bandID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isAdministrator" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="position" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Merchandise" representedClassName="Merchandise" syncable="YES" codeGenerationType="class">
+        <attribute name="count" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Show" representedClassName="Show" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="revenueFromMerch" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="revenueFromTickets" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="setLength" optional="YES" attributeType="String"/>
+        <attribute name="ticketsOnHand" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ticketsSold" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="venue" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Band" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Employee" positionX="-54" positionY="9" width="128" height="148"/>
+        <element name="Show" positionX="-54" positionY="45" width="128" height="148"/>
+        <element name="Contact" positionX="-45" positionY="72" width="128" height="133"/>
+        <element name="Merchandise" positionX="-36" positionY="90" width="128" height="73"/>
+    </elements>
+</model>
