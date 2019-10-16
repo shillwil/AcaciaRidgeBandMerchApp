@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2095027233058E600AD66F5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2095026233058E600AD66F5 /* CoreDataStack.swift */; };
 		A258FC9722FF4195007B682C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FC9622FF4195007B682C /* AppDelegate.swift */; };
 		A258FC9F22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A258FC9D22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld */; };
 		A258FCA122FF4196007B682C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A258FCA022FF4196007B682C /* Assets.xcassets */; };
@@ -19,6 +20,13 @@
 		A258FCD222FF4B20007B682C /* CreateMerchItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCD122FF4B20007B682C /* CreateMerchItemViewController.swift */; };
 		A258FCD422FF4B5C007B682C /* InventoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCD322FF4B5C007B682C /* InventoryDetailViewController.swift */; };
 		A258FCD722FF4C6E007B682C /* InventoryItemCustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCD622FF4C6E007B682C /* InventoryItemCustomPickerView.swift */; };
+		A278B24C2356C25E004FBE5C /* ShowRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278B24B2356C25E004FBE5C /* ShowRepresentation.swift */; };
+		A278B24E2356C27D004FBE5C /* ContactRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278B24D2356C27D004FBE5C /* ContactRepresentation.swift */; };
+		A278B2502356C2A6004FBE5C /* EmployeeRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278B24F2356C2A6004FBE5C /* EmployeeRepresentation.swift */; };
+		A278B2522356C35C004FBE5C /* MerchItemRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278B2512356C35C004FBE5C /* MerchItemRepresentation.swift */; };
+		A278B2542356C3A5004FBE5C /* BandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278B2532356C3A5004FBE5C /* BandController.swift */; };
+		A29B467C235002780098D564 /* BandRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29B467B235002780098D564 /* BandRepresentation.swift */; };
+		A29B46812350041A0098D564 /* Band.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A29B467F2350041A0098D564 /* Band.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A2095026233058E600AD66F5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		A258FC9322FF4195007B682C /* Acacia Ridge Presents the Band App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Acacia Ridge Presents the Band App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A258FC9622FF4195007B682C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A258FC9E22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Acacia_Ridge_Presents_the_Band_App.xcdatamodel; sourceTree = "<group>"; };
@@ -57,6 +66,13 @@
 		A258FCD122FF4B20007B682C /* CreateMerchItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMerchItemViewController.swift; sourceTree = "<group>"; };
 		A258FCD322FF4B5C007B682C /* InventoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDetailViewController.swift; sourceTree = "<group>"; };
 		A258FCD622FF4C6E007B682C /* InventoryItemCustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItemCustomPickerView.swift; sourceTree = "<group>"; };
+		A278B24B2356C25E004FBE5C /* ShowRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRepresentation.swift; sourceTree = "<group>"; };
+		A278B24D2356C27D004FBE5C /* ContactRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRepresentation.swift; sourceTree = "<group>"; };
+		A278B24F2356C2A6004FBE5C /* EmployeeRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRepresentation.swift; sourceTree = "<group>"; };
+		A278B2512356C35C004FBE5C /* MerchItemRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchItemRepresentation.swift; sourceTree = "<group>"; };
+		A278B2532356C3A5004FBE5C /* BandController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandController.swift; sourceTree = "<group>"; };
+		A29B467B235002780098D564 /* BandRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandRepresentation.swift; sourceTree = "<group>"; };
+		A29B46802350041A0098D564 /* Band.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Band.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +125,7 @@
 			children = (
 				A258FC9622FF4195007B682C /* AppDelegate.swift */,
 				A258FCD922FF4CA1007B682C /* Models */,
+				A278B2552356C3AC004FBE5C /* Model Controllers */,
 				A258FCD822FF4C97007B682C /* Views */,
 				A258FCD522FF4C3B007B682C /* VIew Controllers */,
 				A258FCCE22FF4AB6007B682C /* Storyboards */,
@@ -168,8 +185,23 @@
 		A258FCD922FF4CA1007B682C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A2095026233058E600AD66F5 /* CoreDataStack.swift */,
+				A29B467B235002780098D564 /* BandRepresentation.swift */,
+				A29B467F2350041A0098D564 /* Band.xcdatamodeld */,
+				A278B24B2356C25E004FBE5C /* ShowRepresentation.swift */,
+				A278B24D2356C27D004FBE5C /* ContactRepresentation.swift */,
+				A278B24F2356C2A6004FBE5C /* EmployeeRepresentation.swift */,
+				A278B2512356C35C004FBE5C /* MerchItemRepresentation.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A278B2552356C3AC004FBE5C /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A278B2532356C3A5004FBE5C /* BandController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,12 +336,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A278B2542356C3A5004FBE5C /* BandController.swift in Sources */,
+				A2095027233058E600AD66F5 /* CoreDataStack.swift in Sources */,
+				A278B2522356C35C004FBE5C /* MerchItemRepresentation.swift in Sources */,
 				A258FC9722FF4195007B682C /* AppDelegate.swift in Sources */,
+				A29B46812350041A0098D564 /* Band.xcdatamodeld in Sources */,
+				A29B467C235002780098D564 /* BandRepresentation.swift in Sources */,
 				A258FCD422FF4B5C007B682C /* InventoryDetailViewController.swift in Sources */,
 				A258FCD222FF4B20007B682C /* CreateMerchItemViewController.swift in Sources */,
 				A258FCD022FF4AF1007B682C /* InventoryTableViewController.swift in Sources */,
 				A258FCD722FF4C6E007B682C /* InventoryItemCustomPickerView.swift in Sources */,
+				A278B24E2356C27D004FBE5C /* ContactRepresentation.swift in Sources */,
 				A258FC9F22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld in Sources */,
+				A278B2502356C2A6004FBE5C /* EmployeeRepresentation.swift in Sources */,
+				A278B24C2356C25E004FBE5C /* ShowRepresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +687,16 @@
 			);
 			currentVersion = A258FC9E22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodel */;
 			path = Acacia_Ridge_Presents_the_Band_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		A29B467F2350041A0098D564 /* Band.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A29B46802350041A0098D564 /* Band.xcdatamodel */,
+			);
+			currentVersion = A29B46802350041A0098D564 /* Band.xcdatamodel */;
+			path = Band.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
