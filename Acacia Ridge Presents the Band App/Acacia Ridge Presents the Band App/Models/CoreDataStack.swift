@@ -16,7 +16,7 @@ class CoreDataStack {
     
     lazy var container: NSPersistentContainer = {
         // Give the container the name of the data model file
-        let container = NSPersistentContainer(name: "identifier")
+        let container = NSPersistentContainer(name: "Band")
         
         container.loadPersistentStores(completionHandler: { (_, error) in
             if let error = error {
@@ -32,7 +32,7 @@ class CoreDataStack {
         return container.viewContext
     }
     
-    func saveToPersistentStore() {
+    func save() {
         do {
             try mainContext.save()
         } catch {
