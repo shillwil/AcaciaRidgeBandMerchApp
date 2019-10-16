@@ -16,10 +16,10 @@ enum Position: String {
 
 struct EmployeeRepresentation: Codable {
     var name: String
-    var position: Position.RawValue
+    var position: String
     var email: String
     var password: String
     var id: UUID
     var isAdministrator: Bool
-    var band: BandRepresentation
+    var bandID: UUID
 }
