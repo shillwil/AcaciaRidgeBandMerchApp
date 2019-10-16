@@ -51,7 +51,7 @@ class BandController {
             } catch {
                 
             }
-        }
+        }.resume()
     }
     // MARK: - CRUD Methods
     @discardableResult func createEmployee(name: String,
