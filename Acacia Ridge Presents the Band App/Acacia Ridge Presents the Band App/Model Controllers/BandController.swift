@@ -9,8 +9,19 @@
 import Foundation
 
 class BandController {
+    
+    // MARK: - Properties
+    private(set) var employee = [EmployeeRepresentation]()
+    
+    private var persistentFileURL: URL? {
+        let fm = FileManager.default
+        guard let dir = fm.urls(for: .documentDirectory, in: .userDomainMask).first else { return nil }
+        return dir.appendingPathExtension("employee.plist")
+    }
+    
     let baseURL = URL(string: "https://acaciaridgebandapp.firebaseio.com/")!
     
+    // MARK: - Networking Methods
     func fetchBandInformationFromFirebase(employee: EmployeeRepresentation, completion: @escaping () -> Void = { }) {
         let requestURL = baseURL.appendingPathExtension("json")
         
@@ -31,6 +42,51 @@ class BandController {
             } catch {
                 
             }
+        }
+    }
+    // MARK: - CRUD Methods
+    @discardableResult func createEmployee(name: String,
+                        position: Position,
+                        email: String,
+                        password: String,
+                        id: UUID,
+                        isAdministrator: Bool,
+                        band: BandRepresentation) -> EmployeeRepresentation {
+        
+        let employee = EmployeeRepresentation(name: name,
+                                              position: position.rawValue,
+                                              email: email,
+                                              password: password,
+                                              id: id,
+                                              isAdministrator: isAdministrator,
+                                              band: band)
+        
+        CoreDataStack.shared.save()
+        return employee
+    }
+    
+    // MARK: - Persistent Store Methods
+    func saveToPersistentStore() {
+        guard let url = persistentFileURL else { return }
+        
+        do {
+            let data = try PropertyListEncoder().encode(employee)
+            try data.write(to: url)
+        } catch {
+            NSLog("Error saving employee data to native persistent store: \(error)")
+        }
+    }
+    
+    func loadFromPersistentStore() {
+        let fm = FileManager.default
+        guard let url = persistentFileURL,
+            fm.fileExists(atPath: url.path) else { return }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            employee = try PropertyListDecoder().decode([EmployeeRepresentation].self, from: data)
+        } catch {
+            NSLog("Error loading employee data: \(error)")
         }
     }
 }
