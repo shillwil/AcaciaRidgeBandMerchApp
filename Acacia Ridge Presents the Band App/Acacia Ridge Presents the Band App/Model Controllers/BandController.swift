@@ -12,6 +12,7 @@ class BandController {
     
     // MARK: - Properties
     private(set) var employee = [EmployeeRepresentation]()
+    var currentBand: BandRepresentation?
     
     private var persistentFileURL: URL? {
         let fm = FileManager.default
@@ -37,8 +38,16 @@ class BandController {
             }
             
             do {
-                let bandRepresentationInfo = try JSONDecoder().decode([String: BandRepresentation].self, from: data).map({ $0.value })
-                employee.band = bandRepresentationInfo
+                var bandRepresentations = try JSONDecoder().decode([String: BandRepresentation].self, from: data).map({ $0.value })
+                for band in bandRepresentations {
+                    if employee.bandID == band.id {
+                        self.currentBand = band
+                        bandRepresentations = []
+                    } else {
+                        continue
+                    }
+                }
+                
             } catch {
                 
             }
@@ -51,7 +60,7 @@ class BandController {
                         password: String,
                         id: UUID,
                         isAdministrator: Bool,
-                        band: BandRepresentation) -> EmployeeRepresentation {
+                        bandID: UUID) -> EmployeeRepresentation {
         
         let employee = EmployeeRepresentation(name: name,
                                               position: position.rawValue,
@@ -59,7 +68,7 @@ class BandController {
                                               password: password,
                                               id: id,
                                               isAdministrator: isAdministrator,
-                                              band: band)
+                                              bandID: bandID)
         
         CoreDataStack.shared.save()
         return employee
