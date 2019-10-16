@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MerchItemRepresentation {
+struct MerchItemRepresentation: Codable {
     var name: String
     var count: Int
 }

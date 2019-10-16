@@ -14,9 +14,9 @@ enum Position: String {
     case bandMember = "band_member"
 }
 
-struct EmployeeRepresentation {
+struct EmployeeRepresentation: Codable {
     var name: String
-    var position: Position
+    var position: Position.RawValue
     var email: String
     var password: String
     var id: UUID

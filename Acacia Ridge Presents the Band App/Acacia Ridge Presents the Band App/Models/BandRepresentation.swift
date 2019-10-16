@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct BandRepresentation {
+struct BandRepresentation: Codable {
     var name: String
     var members: [EmployeeRepresentation]
-    let id: UUID?
+    let id: UUID
     var email: String
 }

@@ -8,18 +8,18 @@
 
 import Foundation
 
-struct ContactRepresentation {
-    enum ContactCategory: String {
-        case promoter
-        case agent
-        case manager
-        case venue
-    }
-    
+enum ContactCategory: String {
+    case promoter
+    case agent
+    case manager
+    case venue
+}
+
+struct ContactRepresentation: Codable {
     var name: String
     var number: Int
     var email: String
     var employer: String
     var bio: String?
-    var contactCategory: ContactCategory
+    var contactCategory: ContactCategory.RawValue
 }

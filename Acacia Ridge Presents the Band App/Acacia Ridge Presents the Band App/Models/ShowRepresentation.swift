@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct ShowRepresentation {
+struct ShowRepresentation: Codable {
     var venue: String
     var date: Date
     var setLength: String
-    var contact: Contact
+    var contact: ContactRepresentation
     var ticketsOnHand: Int
     var ticketsSold: Int
     var revenueFromTickets: Double
