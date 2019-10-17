@@ -13,6 +13,7 @@ class CreateMerchItemViewController: UIViewController {
     //MARK: - IBOutlets and Properties
     @IBOutlet weak var merchItemTextField: UITextField!
     @IBOutlet weak var merchCountTextField: UITextField!
+    @IBOutlet weak var merchPriceTextField: UITextField!
     
     let merchItemCount: [String] = Array(0...1000).map { String($0) }
     var selectedCount: String?

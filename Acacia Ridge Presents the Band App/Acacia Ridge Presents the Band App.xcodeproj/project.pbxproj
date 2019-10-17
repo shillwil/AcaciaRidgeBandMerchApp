@@ -20,6 +20,7 @@
 		A258FCD222FF4B20007B682C /* CreateMerchItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCD122FF4B20007B682C /* CreateMerchItemViewController.swift */; };
 		A258FCD422FF4B5C007B682C /* InventoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCD322FF4B5C007B682C /* InventoryDetailViewController.swift */; };
 		A258FCD722FF4C6E007B682C /* InventoryItemCustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCD622FF4C6E007B682C /* InventoryItemCustomPickerView.swift */; };
+		A2632CDE2357ED3B00ED7EFE /* Shows.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2632CDD2357ED3B00ED7EFE /* Shows.storyboard */; };
 		A278B24C2356C25E004FBE5C /* ShowRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278B24B2356C25E004FBE5C /* ShowRepresentation.swift */; };
 		A278B24E2356C27D004FBE5C /* ContactRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278B24D2356C27D004FBE5C /* ContactRepresentation.swift */; };
 		A278B2502356C2A6004FBE5C /* EmployeeRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278B24F2356C2A6004FBE5C /* EmployeeRepresentation.swift */; };
@@ -67,6 +68,7 @@
 		A258FCD322FF4B5C007B682C /* InventoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDetailViewController.swift; sourceTree = "<group>"; };
 		A258FCD622FF4C6E007B682C /* InventoryItemCustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItemCustomPickerView.swift; sourceTree = "<group>"; };
 		A2632CDC2357CB1400ED7EFE /* Band 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Band 2.xcdatamodel"; sourceTree = "<group>"; };
+		A2632CDD2357ED3B00ED7EFE /* Shows.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shows.storyboard; sourceTree = "<group>"; };
 		A278B24B2356C25E004FBE5C /* ShowRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRepresentation.swift; sourceTree = "<group>"; };
 		A278B24D2356C27D004FBE5C /* ContactRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRepresentation.swift; sourceTree = "<group>"; };
 		A278B24F2356C2A6004FBE5C /* EmployeeRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRepresentation.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				A258FCC722FF41C8007B682C /* Main.storyboard */,
 				A258FCCC22FF449E007B682C /* MerchInventory.storyboard */,
 				A258FCA222FF4196007B682C /* LaunchScreen.storyboard */,
+				A2632CDD2357ED3B00ED7EFE /* Shows.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			files = (
 				A258FCC922FF41C8007B682C /* Main.storyboard in Resources */,
 				A258FCCD22FF449E007B682C /* MerchInventory.storyboard in Resources */,
+				A2632CDE2357ED3B00ED7EFE /* Shows.storyboard in Resources */,
 				A258FCA422FF4196007B682C /* LaunchScreen.storyboard in Resources */,
 				A258FCA122FF4196007B682C /* Assets.xcassets in Resources */,
 			);
