@@ -10,6 +10,7 @@ import UIKit
 
 class AddEditShowViewController: UIViewController {
     
+    // MARK: - IBOutlets
     @IBOutlet weak var venueNameTextField: UITextField!
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var setLengthTextField: UITextField!
@@ -23,16 +24,16 @@ class AddEditShowViewController: UIViewController {
         createToolbar()
     }
     
+    // MARK: - IBActions
     @IBAction func save(_ sender: UIButton) {
+        
     }
     
-//    func createCountPicker() {
-//        let countPicker = UIPickerView()
-//        countPicker.delegate = self
-//
-//        merchCountTextField.inputView = countPicker
-//    }
     
+    
+    
+    // MARK: - Methods & Functions
+    // Function creates a "Done" button above the keyboard to dismiss when user is done with putting something in each textField
     func createToolbar() {
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
