@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GXi-bw-wXU">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GXi-bw-wXU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,7 +24,7 @@
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InventoryCell" textLabel="gyQ-pV-VjE" detailTextLabel="GQf-lL-slJ" style="IBUITableViewCellStyleValue1" id="pQg-cp-IcG">
-                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pQg-cp-IcG" id="LqX-5S-Fhv">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -49,7 +47,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="UPM-2q-ldo" kind="show" identifier="ViewMerchItem" id="7IU-M6-TdH"/>
+                                    <segue destination="fvV-3d-nJf" kind="show" id="GKV-sz-vqw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -62,7 +60,7 @@
                     <navigationItem key="navigationItem" title="Inventory" id="xwj-vF-yLj">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="tGZ-Je-jKZ">
                             <connections>
-                                <segue destination="meE-pn-J3Z" kind="presentation" identifier="CreateMerchItem" id="P0q-ij-DwD"/>
+                                <segue destination="8HK-Oa-ebq" kind="presentation" id="DvH-FC-jrf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -73,138 +71,156 @@
             <point key="canvasLocation" x="2836.2318840579715" y="147.99107142857142"/>
         </scene>
         <!--Item-->
-        <scene sceneID="sOz-E3-PZz">
+        <scene sceneID="wKI-YP-eiv">
             <objects>
-                <viewController id="UPM-2q-ldo" customClass="InventoryDetailViewController" customModule="Acacia_Ridge_Presents_the_Band_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WNf-1G-FY0">
+                <viewController id="fvV-3d-nJf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ik1-K1-8kD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merchandise Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qca-Ba-wDm">
-                                <rect key="frame" x="50" y="190" width="314" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Merchandise Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnZ-mP-R1k">
+                                <rect key="frame" x="50" y="185" width="314" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="a6z-Gq-oQJ">
-                                <rect key="frame" x="115" y="235" width="184" height="29"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="g19-yb-JlB">
+                                <rect key="frame" x="115" y="230" width="174" height="29"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzN-B5-fw4">
-                                        <rect key="frame" x="0.0" y="0.0" width="25" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFr-QD-VU5">
+                                        <rect key="frame" x="0.0" y="0.0" width="15.5" height="29"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Items in stock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g8-Fc-sQi">
-                                        <rect key="frame" x="33" y="0.0" width="151" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Items in stock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zx4-Xt-m4L">
+                                        <rect key="frame" x="23.5" y="0.0" width="150.5" height="29"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbB-0i-tCe">
+                                <rect key="frame" x="20" y="424" width="374" height="41"/>
+                                <color key="backgroundColor" red="0.59215686270000001" green="0.0039215686269999999" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Edit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="qca-Ba-wDm" firstAttribute="top" secondItem="nwg-Jz-R6a" secondAttribute="top" constant="50" id="Dko-7K-9wj"/>
-                            <constraint firstItem="qca-Ba-wDm" firstAttribute="centerX" secondItem="WNf-1G-FY0" secondAttribute="centerX" id="Flx-d6-SMd"/>
-                            <constraint firstItem="qca-Ba-wDm" firstAttribute="leading" secondItem="nwg-Jz-R6a" secondAttribute="leading" constant="50" id="S9Z-XB-NwH"/>
-                            <constraint firstItem="nwg-Jz-R6a" firstAttribute="trailing" secondItem="a6z-Gq-oQJ" secondAttribute="trailing" constant="115" id="UzK-N1-8H4"/>
-                            <constraint firstItem="nwg-Jz-R6a" firstAttribute="trailing" secondItem="qca-Ba-wDm" secondAttribute="trailing" constant="50" id="dvl-pd-ytx"/>
-                            <constraint firstItem="a6z-Gq-oQJ" firstAttribute="leading" secondItem="nwg-Jz-R6a" secondAttribute="leading" constant="115" id="lB4-7Q-0pz"/>
-                            <constraint firstItem="a6z-Gq-oQJ" firstAttribute="top" secondItem="qca-Ba-wDm" secondAttribute="bottom" constant="16" id="rXp-iH-LHV"/>
+                            <constraint firstItem="UnZ-mP-R1k" firstAttribute="top" secondItem="cyF-Ep-4WP" secondAttribute="top" constant="45" id="CA5-6e-cF6"/>
+                            <constraint firstItem="g19-yb-JlB" firstAttribute="top" secondItem="UnZ-mP-R1k" secondAttribute="bottom" constant="16" id="RWF-N6-fTi"/>
+                            <constraint firstItem="cyF-Ep-4WP" firstAttribute="trailing" secondItem="VbB-0i-tCe" secondAttribute="trailing" constant="20" id="Y6Y-sB-xCL"/>
+                            <constraint firstItem="VbB-0i-tCe" firstAttribute="leading" secondItem="cyF-Ep-4WP" secondAttribute="leading" constant="20" id="f9I-Wi-8iP"/>
+                            <constraint firstItem="VbB-0i-tCe" firstAttribute="top" secondItem="g19-yb-JlB" secondAttribute="bottom" constant="165" id="hUd-HV-KBJ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="nwg-Jz-R6a"/>
+                        <viewLayoutGuide key="safeArea" id="cyF-Ep-4WP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Inventory" image="clo-t-hanger-line-3" selectedImage="clo-t-hanger-solid-3" id="ifV-ZM-hJU"/>
-                    <navigationItem key="navigationItem" title="Item" id="e5H-mF-hbt"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationItem key="navigationItem" title="Item" id="U5r-Ym-PJr"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EaG-n0-ft6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n4U-HO-9Na" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3804.347826086957" y="643.52678571428567"/>
+            <point key="canvasLocation" x="3806" y="675"/>
         </scene>
         <!--Create Merch Item View Controller-->
-        <scene sceneID="5SQ-KA-xuq">
+        <scene sceneID="KpX-bb-yHi">
             <objects>
-                <viewController id="meE-pn-J3Z" customClass="CreateMerchItemViewController" customModule="Acacia_Ridge_Presents_the_Band_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="d9c-rr-Yxx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="8HK-Oa-ebq" customClass="CreateMerchItemViewController" customModule="Acacia_Ridge_Presents_the_Band_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rNF-4q-v2t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="CII-4d-oSm">
-                                <rect key="frame" x="20" y="94" width="374" height="145"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="enZ-Bc-eQ1">
+                                <rect key="frame" x="20" y="20" width="374" height="195"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="A31-h4-asC">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="68"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VB0-XI-cYn">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="118"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="X2o-wx-7PK">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XFk-En-Ktn">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Merch Item:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9If-Qv-wxq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Merch Item:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Db9-jb-p7K">
+                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Item Here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1x3-Bf-3N0">
-                                                        <rect key="frame" x="138" y="0.0" width="236" height="30"/>
-                                                        <nil key="textColor"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Item Here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIw-ga-UMo">
+                                                        <rect key="frame" x="138" y="0.0" width="236" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AwO-vh-v61">
-                                                <rect key="frame" x="0.0" y="38" width="374" height="30"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wMq-25-Y8P">
+                                                <rect key="frame" x="0.0" y="42" width="374" height="34"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Count:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTK-no-2ex">
-                                                        <rect key="frame" x="0.0" y="0.0" width="127.5" height="30"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Count:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7Q-qv-Q2w">
+                                                        <rect key="frame" x="0.0" y="0.0" width="127.5" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BFe-Em-TTU">
-                                                        <rect key="frame" x="135.5" y="0.0" width="238.5" height="30"/>
-                                                        <nil key="textColor"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZW-Nm-9Z9">
+                                                        <rect key="frame" x="135.5" y="0.0" width="238.5" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HpD-MB-PII">
+                                                <rect key="frame" x="0.0" y="84" width="374" height="34"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merch Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXh-qy-PCB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="137" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p4L-zP-L1L">
+                                                        <rect key="frame" x="145" y="0.0" width="229" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ko4-4U-71h">
-                                        <rect key="frame" x="0.0" y="104" width="374" height="41"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jq7-IC-ebm">
+                                        <rect key="frame" x="0.0" y="154" width="374" height="41"/>
+                                        <color key="backgroundColor" red="0.59215686270000001" green="0.0039215686269999999" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Save Item">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="saveItemButtonTapped:" destination="meE-pn-J3Z" eventType="touchUpInside" id="323-Gg-7lh"/>
+                                            <action selector="saveItemButtonTapped:" destination="8HK-Oa-ebq" eventType="touchUpInside" id="mmi-Lq-SVs"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="CII-4d-oSm" firstAttribute="leading" secondItem="hgb-yr-qK8" secondAttribute="leading" constant="20" id="L95-2s-d5b"/>
-                            <constraint firstItem="hgb-yr-qK8" firstAttribute="trailing" secondItem="CII-4d-oSm" secondAttribute="trailing" constant="20" id="NlC-CU-hnf"/>
-                            <constraint firstItem="CII-4d-oSm" firstAttribute="top" secondItem="hgb-yr-qK8" secondAttribute="top" constant="50" id="yEk-up-xOs"/>
+                            <constraint firstItem="YO4-Tw-Rrr" firstAttribute="trailing" secondItem="enZ-Bc-eQ1" secondAttribute="trailing" constant="20" id="4DG-yr-qaU"/>
+                            <constraint firstItem="enZ-Bc-eQ1" firstAttribute="leading" secondItem="YO4-Tw-Rrr" secondAttribute="leading" constant="20" id="HWW-6e-I2x"/>
+                            <constraint firstItem="enZ-Bc-eQ1" firstAttribute="top" secondItem="YO4-Tw-Rrr" secondAttribute="top" constant="20" id="yqf-Uy-CKc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="hgb-yr-qK8"/>
+                        <viewLayoutGuide key="safeArea" id="YO4-Tw-Rrr"/>
                     </view>
                     <connections>
-                        <outlet property="merchCountTextField" destination="BFe-Em-TTU" id="pqD-Dg-gaT"/>
-                        <outlet property="merchItemCountTextField" destination="1x3-Bf-3N0" id="VaG-7H-HLw"/>
-                        <outlet property="merchItemTextField" destination="1x3-Bf-3N0" id="XWy-Om-9mB"/>
+                        <outlet property="merchCountTextField" destination="wZW-Nm-9Z9" id="AT4-oq-Snn"/>
+                        <outlet property="merchItemTextField" destination="cIw-ga-UMo" id="rUi-5a-BXU"/>
+                        <outlet property="merchPriceTextField" destination="p4L-zP-L1L" id="SmR-fW-Da8"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4kM-QL-dxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gw4-kM-0a5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3804.347826086957" y="-305.35714285714283"/>
+            <point key="canvasLocation" x="3806" y="-406"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OAl-06-cjk">
@@ -214,6 +230,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="SO1-bL-kID">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.59215686270000001" green="0.0039215686269999999" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
