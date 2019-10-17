@@ -5,6 +5,10 @@
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" attributeType="String" defaultValueString="UntitledBand"/>
         <attribute name="password" optional="YES" attributeType="String"/>
+        <relationship name="contacts" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Contact" inverseName="band" inverseEntity="Contact"/>
+        <relationship name="members" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Employee" inverseName="band" inverseEntity="Employee"/>
+        <relationship name="merchItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Merchandise" inverseName="band" inverseEntity="Merchandise"/>
+        <relationship name="shows" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Show" inverseName="band" inverseEntity="Show"/>
     </entity>
     <entity name="Contact" representedClassName="Contact" syncable="YES" codeGenerationType="class">
         <attribute name="bio" optional="YES" attributeType="String"/>
@@ -13,6 +17,7 @@
         <attribute name="employer" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="number" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="band" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Band" inverseName="contacts" inverseEntity="Band"/>
     </entity>
     <entity name="Employee" representedClassName="Employee" syncable="YES" codeGenerationType="class">
         <attribute name="bandID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
@@ -22,10 +27,12 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="password" optional="YES" attributeType="String"/>
         <attribute name="position" optional="YES" attributeType="String"/>
+        <relationship name="band" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Band" inverseName="members" inverseEntity="Band"/>
     </entity>
     <entity name="Merchandise" representedClassName="Merchandise" syncable="YES" codeGenerationType="class">
         <attribute name="count" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="band" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Band" inverseName="merchItems" inverseEntity="Band"/>
     </entity>
     <entity name="Show" representedClassName="Show" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
@@ -35,12 +42,13 @@
         <attribute name="ticketsOnHand" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="ticketsSold" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="venue" optional="YES" attributeType="String"/>
+        <relationship name="band" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Band" inverseName="shows" inverseEntity="Band"/>
     </entity>
     <elements>
-        <element name="Band" positionX="-63" positionY="-18" width="128" height="103"/>
-        <element name="Employee" positionX="-54" positionY="9" width="128" height="148"/>
-        <element name="Show" positionX="-54" positionY="45" width="128" height="148"/>
-        <element name="Contact" positionX="-45" positionY="72" width="128" height="133"/>
-        <element name="Merchandise" positionX="-36" positionY="90" width="128" height="73"/>
+        <element name="Band" positionX="-138.140625" positionY="-151.8203125" width="128" height="163"/>
+        <element name="Employee" positionX="-135.79296875" positionY="-1.109375" width="128" height="163"/>
+        <element name="Show" positionX="247.33203125" positionY="-206.21875" width="128" height="163"/>
+        <element name="Contact" positionX="-396.13671875" positionY="82.65234375" width="128" height="148"/>
+        <element name="Merchandise" positionX="262.33203125" positionY="25.453125" width="128" height="88"/>
     </elements>
 </model>
