@@ -21,6 +21,9 @@
 		A258FCD422FF4B5C007B682C /* InventoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCD322FF4B5C007B682C /* InventoryDetailViewController.swift */; };
 		A258FCD722FF4C6E007B682C /* InventoryItemCustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FCD622FF4C6E007B682C /* InventoryItemCustomPickerView.swift */; };
 		A2632CDE2357ED3B00ED7EFE /* Shows.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2632CDD2357ED3B00ED7EFE /* Shows.storyboard */; };
+		A2632CE02358CC6A00ED7EFE /* ShowsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2632CDF2358CC6A00ED7EFE /* ShowsTableViewController.swift */; };
+		A2632CE22358CC8D00ED7EFE /* AddEditShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2632CE12358CC8D00ED7EFE /* AddEditShowViewController.swift */; };
+		A2632CE42358CCB400ED7EFE /* ShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2632CE32358CCB400ED7EFE /* ShowDetailViewController.swift */; };
 		A278B24C2356C25E004FBE5C /* ShowRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278B24B2356C25E004FBE5C /* ShowRepresentation.swift */; };
 		A278B24E2356C27D004FBE5C /* ContactRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278B24D2356C27D004FBE5C /* ContactRepresentation.swift */; };
 		A278B2502356C2A6004FBE5C /* EmployeeRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278B24F2356C2A6004FBE5C /* EmployeeRepresentation.swift */; };
@@ -69,6 +72,9 @@
 		A258FCD622FF4C6E007B682C /* InventoryItemCustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItemCustomPickerView.swift; sourceTree = "<group>"; };
 		A2632CDC2357CB1400ED7EFE /* Band 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Band 2.xcdatamodel"; sourceTree = "<group>"; };
 		A2632CDD2357ED3B00ED7EFE /* Shows.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shows.storyboard; sourceTree = "<group>"; };
+		A2632CDF2358CC6A00ED7EFE /* ShowsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsTableViewController.swift; sourceTree = "<group>"; };
+		A2632CE12358CC8D00ED7EFE /* AddEditShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditShowViewController.swift; sourceTree = "<group>"; };
+		A2632CE32358CCB400ED7EFE /* ShowDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
 		A278B24B2356C25E004FBE5C /* ShowRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRepresentation.swift; sourceTree = "<group>"; };
 		A278B24D2356C27D004FBE5C /* ContactRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRepresentation.swift; sourceTree = "<group>"; };
 		A278B24F2356C2A6004FBE5C /* EmployeeRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRepresentation.swift; sourceTree = "<group>"; };
@@ -174,6 +180,9 @@
 				A258FCD322FF4B5C007B682C /* InventoryDetailViewController.swift */,
 				A258FCD122FF4B20007B682C /* CreateMerchItemViewController.swift */,
 				A258FCCF22FF4AF1007B682C /* InventoryTableViewController.swift */,
+				A2632CDF2358CC6A00ED7EFE /* ShowsTableViewController.swift */,
+				A2632CE12358CC8D00ED7EFE /* AddEditShowViewController.swift */,
+				A2632CE32358CCB400ED7EFE /* ShowDetailViewController.swift */,
 			);
 			path = "VIew Controllers";
 			sourceTree = "<group>";
@@ -341,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2632CE02358CC6A00ED7EFE /* ShowsTableViewController.swift in Sources */,
 				A278B2542356C3A5004FBE5C /* BandController.swift in Sources */,
 				A2095027233058E600AD66F5 /* CoreDataStack.swift in Sources */,
 				A278B2522356C35C004FBE5C /* MerchItemRepresentation.swift in Sources */,
@@ -349,6 +359,8 @@
 				A29B467C235002780098D564 /* BandRepresentation.swift in Sources */,
 				A258FCD422FF4B5C007B682C /* InventoryDetailViewController.swift in Sources */,
 				A258FCD222FF4B20007B682C /* CreateMerchItemViewController.swift in Sources */,
+				A2632CE22358CC8D00ED7EFE /* AddEditShowViewController.swift in Sources */,
+				A2632CE42358CCB400ED7EFE /* ShowDetailViewController.swift in Sources */,
 				A258FCD022FF4AF1007B682C /* InventoryTableViewController.swift in Sources */,
 				A258FCD722FF4C6E007B682C /* InventoryItemCustomPickerView.swift in Sources */,
 				A278B24E2356C27D004FBE5C /* ContactRepresentation.swift in Sources */,
