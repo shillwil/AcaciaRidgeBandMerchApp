@@ -14,4 +14,7 @@ struct BandRepresentation: Codable {
     let id: UUID
     var email: String
     var password: String
+    var merchItems: [MerchItemRepresentation]
+    var contacts: [ContactRepresentation]
+    var shows: [ShowRepresentation]
 }
