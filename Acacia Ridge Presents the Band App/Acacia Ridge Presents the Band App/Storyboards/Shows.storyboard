@@ -306,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ru-Sv-X6j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2006" y="570"/>
+            <point key="canvasLocation" x="2367" y="594"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uaX-tS-P7q">
@@ -321,12 +321,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lyE-Wd-F6A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3070" y="570"/>
+            <point key="canvasLocation" x="3930" y="594"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Edit Show View Controller-->
         <scene sceneID="G8O-NS-9Jk">
             <objects>
-                <viewController id="tGl-ZQ-Iis" sceneMemberID="viewController">
+                <viewController id="tGl-ZQ-Iis" customClass="AddEditShowViewController" customModule="Acacia_Ridge_Presents_the_Band_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3VR-6t-ywo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -430,6 +430,9 @@
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="save:" destination="tGl-ZQ-Iis" eventType="touchUpInside" id="vIZ-hH-kno"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -456,10 +459,17 @@
                         <viewLayoutGuide key="safeArea" id="E0f-us-yws"/>
                     </view>
                     <navigationItem key="navigationItem" id="pqS-GF-jKQ"/>
+                    <connections>
+                        <outlet property="contactTextField" destination="SXJ-g9-TMO" id="VE3-it-CFr"/>
+                        <outlet property="dateTextField" destination="pfI-eK-xFg" id="H18-O1-o2C"/>
+                        <outlet property="setLengthTextField" destination="z0Q-od-8Gw" id="IbT-IB-CAQ"/>
+                        <outlet property="ticketCountTextField" destination="rY0-ct-DDP" id="nLo-ze-yyc"/>
+                        <outlet property="venueNameTextField" destination="uTm-P3-7ax" id="L2f-vf-9eL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWH-9m-KFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2006" y="-200"/>
+            <point key="canvasLocation" x="2367" y="-301"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tfw-Km-GgO">
