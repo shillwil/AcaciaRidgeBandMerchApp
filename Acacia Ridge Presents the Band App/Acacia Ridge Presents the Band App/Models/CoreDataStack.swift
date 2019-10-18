@@ -33,13 +33,14 @@ class CoreDataStack {
         return container.viewContext
     }
     
-    func save() {
-        do {
-            try mainContext.save()
-        } catch {
-            NSLog("Error saving context on line \(#line) in file \(#file): \(error)")
-            mainContext.reset()
+    func save(context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
+        context.performAndWait {
+            do {
+                try context.save()
+            } catch {
+                NSLog("Error saving context on line \(#line) in file \(#file): \(error)")
+                context.reset()
+            }
         }
-        
     }
 }
