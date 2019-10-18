@@ -11,6 +11,7 @@ import Foundation
 class BandController {
     
     // MARK: - Properties
+    static var shared = BandController()
     private(set) var employee = [EmployeeRepresentation]()
     var currentBand: BandRepresentation?
     
@@ -70,7 +71,12 @@ class BandController {
                                               isAdministrator: isAdministrator,
                                               bandID: bandID)
         
-        CoreDataStack.shared.save()
+        let context = CoreDataStack.shared.mainContext
+        
+        context.performAndWait {
+            CoreDataStack.shared.save()
+        }
+        
         return employee
     }
     
