@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GXi-bw-wXU">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -78,14 +78,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Merchandise Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnZ-mP-R1k">
-                                <rect key="frame" x="50" y="185" width="314" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merchandise Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnZ-mP-R1k">
+                                <rect key="frame" x="109.5" y="185" width="195.5" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="g19-yb-JlB">
-                                <rect key="frame" x="115" y="230" width="174" height="29"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="g19-yb-JlB">
+                                <rect key="frame" x="120" y="230" width="174" height="29"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFr-QD-VU5">
                                         <rect key="frame" x="0.0" y="0.0" width="15.5" height="29"/>
@@ -112,6 +112,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="g19-yb-JlB" firstAttribute="centerX" secondItem="Ik1-K1-8kD" secondAttribute="centerX" id="2uT-7H-Sq6"/>
+                            <constraint firstItem="UnZ-mP-R1k" firstAttribute="centerX" secondItem="Ik1-K1-8kD" secondAttribute="centerX" id="77A-x4-wce"/>
                             <constraint firstItem="UnZ-mP-R1k" firstAttribute="top" secondItem="cyF-Ep-4WP" secondAttribute="top" constant="45" id="CA5-6e-cF6"/>
                             <constraint firstItem="g19-yb-JlB" firstAttribute="top" secondItem="UnZ-mP-R1k" secondAttribute="bottom" constant="16" id="RWF-N6-fTi"/>
                             <constraint firstItem="cyF-Ep-4WP" firstAttribute="trailing" secondItem="VbB-0i-tCe" secondAttribute="trailing" constant="20" id="Y6Y-sB-xCL"/>
