@@ -10,6 +10,27 @@ import UIKit
 import CoreData
 
 class ShowsTableViewController: UITableViewController {
+    
+    lazy var fetchedResultsController: NSFetchedResultsController<Show> = {
+        
+        let fetchRequest: NSFetchRequest<Show> = Show.fetchRequest()
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
+        
+        let frc = NSFetchedResultsController(fetchRequest: fetchRequest,
+                                             managedObjectContext: CoreDataStack.shared.mainContext,
+                                             sectionNameKeyPath: "date",
+                                             cacheName: nil)
+        
+        frc.delegate = self
+        
+        do {
+            try frc.performFetch()
+        } catch {
+            fatalError("Error performing fetch for frc: \(error)")
+        }
+        
+        return frc
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
