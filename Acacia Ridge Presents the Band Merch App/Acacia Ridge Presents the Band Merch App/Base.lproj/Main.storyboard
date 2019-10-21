@@ -22,6 +22,7 @@
                     <connections>
                         <segue destination="2Ni-aH-lxG" kind="relationship" relationship="viewControllers" id="0Hd-4V-XpW"/>
                         <segue destination="iAd-Ns-9kc" kind="relationship" relationship="viewControllers" id="Q53-hu-1e8"/>
+                        <segue destination="OAP-yG-Acl" kind="relationship" relationship="viewControllers" id="nsV-Xe-XWh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nkr-RQ-cSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -48,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="887" y="50"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Contacts-->
         <scene sceneID="Cad-nc-3Fp">
             <objects>
-                <viewControllerPlaceholder id="OAP-yG-Acl" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Contacts" id="OAP-yG-Acl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Rlj-J1-R21"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YJS-6S-0g3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
