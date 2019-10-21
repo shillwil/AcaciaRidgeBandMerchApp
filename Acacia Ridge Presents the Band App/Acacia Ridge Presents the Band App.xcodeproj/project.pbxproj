@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A2095027233058E600AD66F5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2095026233058E600AD66F5 /* CoreDataStack.swift */; };
+		A237AA54235D588700D7BC43 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A237AA53235D588700D7BC43 /* Contacts.storyboard */; };
 		A258FC9722FF4195007B682C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258FC9622FF4195007B682C /* AppDelegate.swift */; };
 		A258FC9F22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A258FC9D22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodeld */; };
 		A258FCA122FF4196007B682C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A258FCA022FF4196007B682C /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		A2095026233058E600AD66F5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		A237AA53235D588700D7BC43 /* Contacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
 		A258FC9322FF4195007B682C /* Acacia Ridge Presents the Band App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Acacia Ridge Presents the Band App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A258FC9622FF4195007B682C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A258FC9E22FF4195007B682C /* Acacia_Ridge_Presents_the_Band_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Acacia_Ridge_Presents_the_Band_App.xcdatamodel; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				A258FCCC22FF449E007B682C /* MerchInventory.storyboard */,
 				A258FCA222FF4196007B682C /* LaunchScreen.storyboard */,
 				A2632CDD2357ED3B00ED7EFE /* Shows.storyboard */,
+				A237AA53235D588700D7BC43 /* Contacts.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				A258FCC922FF41C8007B682C /* Main.storyboard in Resources */,
 				A258FCCD22FF449E007B682C /* MerchInventory.storyboard in Resources */,
 				A2632CDE2357ED3B00ED7EFE /* Shows.storyboard in Resources */,
+				A237AA54235D588700D7BC43 /* Contacts.storyboard in Resources */,
 				A258FCA422FF4196007B682C /* LaunchScreen.storyboard in Resources */,
 				A258FCA122FF4196007B682C /* Assets.xcassets in Resources */,
 			);
