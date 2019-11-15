@@ -56,6 +56,7 @@
                             <outlet property="delegate" destination="L87-DB-8vI" id="9OU-qp-kiq"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="vfY-5S-y36"/>
                     <navigationItem key="navigationItem" title="Contacts" id="DUA-5M-of2">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="BD9-mT-tPm">
                             <connections>
@@ -63,6 +64,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="81V-wb-cgO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -311,6 +313,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XR3-Ma-5WQ"/>
+        <segue reference="Cp7-LE-jzY"/>
     </inferredMetricsTieBreakers>
 </document>
